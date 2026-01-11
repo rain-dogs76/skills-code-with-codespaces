@@ -2,8 +2,9 @@
   "name": "Universal - Latest",
   "image": "mcr.microsoft.com/devcontainers/universal:latest",
   "features": {
-    "ghcr.io/davzucky/devcontainers-features-wolfi/python:1": {
-      "pythonVersion": "3.10"
+    "ghcr.io/devcontainers/features/python:1": {
+      "installTools": true,
+      "version": "3.10"
     }
   },
   "customizations": {
@@ -13,6 +14,6 @@
         "ms-python.debugpy"
       ]
     }
-  }
+  },
   "postCreateCommand": "bash .devcontainer/postCreate.sh"
 }
